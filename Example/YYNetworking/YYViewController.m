@@ -19,6 +19,14 @@
 {
     [super viewDidLoad];
 	
+    [YYNetworking requestWithHTTPMethod:HTTPMethodGet
+                              URLString:@"https:www.baidu.com"
+                             parameters:nil
+                                success:^(NSURLSessionDataTask * _Nonnull, id _Nullable) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable, NSError * _Nonnull) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
