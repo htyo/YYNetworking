@@ -7,6 +7,7 @@
 //
 
 #import "YYViewController.h"
+#import <YYNetworking/YYNetworking.h>
 
 @interface YYViewController ()
 

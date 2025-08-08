@@ -1,0 +1,45 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - YYNetworking (1.0.0):
+    - AFNetworking
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - YYNetworking (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  YYNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  YYNetworking: 7b4e2966f4e238d1d5b8647415e18d97bb1f9d62
+
+PODFILE CHECKSUM: 73bdb08c865665d843ce2cf212ceaf4734e3c268
+
+COCOAPODS: 1.16.2
