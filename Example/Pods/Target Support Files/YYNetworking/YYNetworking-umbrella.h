@@ -11,6 +11,8 @@
 #endif
 
 #import "YYNetworking.h"
+#import "YYNetWorkingHelper.h"
+#import "YYNetWorkingResponse.h"
 
 FOUNDATION_EXPORT double YYNetworkingVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYNetworkingVersionString[];
