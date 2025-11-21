@@ -67,9 +67,13 @@
     
     AFHTTPSessionManager *manager = [YYNetworking sessionManager];
     
-    for(NSString * key in headers.allKeys) {
-        NSString * value = headers[key];
-        if (value && value.length) [manager.requestSerializer setValue:value forHTTPHeaderField:key];
+    for (id key in headers.allKeys) {
+        id value = headers[key];
+        if (![key isKindOfClass:[NSString class]]) continue;
+        if (![value isKindOfClass:[NSString class]]) value = [value description];
+        if ([(NSString *)value length] > 0) {
+            [manager.requestSerializer setValue:value forHTTPHeaderField:key];
+        }
     }
     
     switch (method) {
